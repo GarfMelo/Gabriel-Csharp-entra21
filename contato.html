@@ -18,17 +18,17 @@
         
     </nav>
     
-    <form action="enviaemail.cs" method="post">
+    <form action="enviaemail.cs" method="post" enctype="multipart/form-data">
         <label>nome: </label>
-        <input type="text" name="nome" value="diego"readonly placeholder="informe seu nome completo">
+        <input type="text" name="nome" value=""placeholder="informe seu nome completo">
         
         <label>E-mail: </label>
-        <input type="email" name="email" required>
+        <input type="email" name="email" value='' placeholder="Exemplo@email.com" required>
         
         <select name="estados">
 
             <option value="">selecione o estado</option>
-            <option value="SC">Santa Catarina</option>
+            <option value="SC" selected>Santa Catarina</option>
             <option value="PR">Paraná</option>
             <option value="RS">Rio Grande do Sul</option>
         </select>
@@ -47,11 +47,20 @@
          <input type="checkbox" name="comida" value="Feijao"> Feijao
 
 <p></p>
-        <label>senha: </label>
-        <input type="password" name="senha">
+<textarea name="mensagem" id="" cols="100" rows="5" required></textarea>
 
+<br>
+<label>senha: </label>
+<input type="password" name="senha" minlength="8" maxlength="10">
+
+        <label>Foto</label>
+        <input type="file" name="Foto" multiple>
+
+        
+        <input type="hidden" name="codigoibge" value="123421">
+
+        <br>
         <button type="submit"> enviar</button>
-
         <input type="reset" name="limpar" value="limpar">
 
     </form>
