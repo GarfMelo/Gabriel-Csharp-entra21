@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Meu primeiro site</title>
+    <style>
+        body{
+            background: grey;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
-        <img src="img/bemvinda.jpg" alt="" class="LogoSite">
+        <img src="img/imagem logo.png" alt="" class="LogoSite">
             <a href="index.html">Home</a>
             <a href="empresa.html">empresa</a>
             <a href="servicos.html">serviços</a>
@@ -23,9 +28,9 @@
 
     <main>
         <article>
-            <div class="homeArticle">
+            <div class="homeArticle active">
                 <img src="data:image/png;base64,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" alt="">
-                <h2>
+                <h2 style="color: green;">
                 Este ficheiro contém informação adicional
                 </h2>
                 <p>provavelmente adicionada a partir da câmara digital ou scanner utilizada para criar ou digitalizar a imagem. Caso o ficheiro tenha sido modificado a partir do seu estado original, alguns detalhes poderão não refletir completamente as mudanças efetuadas.</p>
@@ -37,7 +42,7 @@
                 <h2>
                     cara sla bolsonaro
                 </h2> 
-                <p>flamengo!</p>
+                <p>flamengo! flamengo! flamengo! flamengo! flamengo! flamengo! flamengo! flamengo! flamengo! flamengo! flamengo! flamengo! flamengo! flamengo! flamengo! flamengo! flamengo! flamengo! flamengo! flamengo! flamengo!</p>
                 <a href="nao-ver-noticia.html"> vejam a noticia!!!</a>
             </div>
         </article>

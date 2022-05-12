@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&family=Quicksand:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&family=Quicksand:wght@300;400;600&family=Zen+Loop:ital@0;1&display=swap');
 html, body{
     margin: 0;
     padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+*{
+    font-family: 'Quicksand', sans-serif;
 }
 nav{
     position: absolute;
@@ -12,15 +19,62 @@ nav{
 }
 .LogoSite{
     float: left;
-    width: 110px;
+    width: 136px;
 }
+/*configuração navegação */
 nav a{
     display: block;
     width: auto;
-    height: 56px;
-    padding: 4px;
+    height: 54px;
+    padding: 10px;
     float: left;
-    line-height: 52px;
+    line-height: 64px;
     color: #fff;
     text-decoration: none;
+    font-family: 'Zen Loop', cursive;
+    font-weight: 400;
+    font-size: larger;
+}
+/*regra dos conteudos */
+    main{
+        padding: 110px 10px;
+    }
+.homeArticle{
+    width: 42%;
+    background-color: rgb(145, 143, 143);
+    margin:15px 2%;
+    border-radius: 79px;
+    border-top-right-radius: 79px;
+    border-bottom-right-radius: 79px;
+    box-shadow: 0px 0px 5px 6px rgb(0, 0, 0);
+    padding: 25px;
+    display: inline-block;
+}
+.homeArticle img{
+    float: left;
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 127px;
+}
+.homeArticle h2{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: aqua;
+}
+.homeArticle p{
+    font-style: italic;
+    text-indent: 20px;
+}
+.homeArticle a{
+    display: inline block;
+    width: auto;
+    padding: 4px;
+    background: black;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    float: right;
+}
+.homeArticle a:hover{
+    box-shadow: 0px 0px 5px 6px rgb(5, 255, 255);
 }
