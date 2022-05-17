@@ -8,8 +8,9 @@
     <title>Meu primeiro site</title>
 </head>
 <body>
+    <center>
     <nav>
-        <img src="img/imagem logo.png" alt="" class="LogoSite">
+    <img src="img/imagem logo.png" alt="" class="LogoSite">
         <a href="index.html">Home</a>
         <a href="empresa.html">empresa</a>
         <a href="servicos.html">serviços</a>
@@ -17,7 +18,8 @@
         <a href="cadastro.html">cadastro</a>
         
     </nav>
-    
+<main> 
+
     <form action="enviaemail.cs" method="post" enctype="multipart/form-data">
         <label>nome: </label>
         <input type="text" name="nome" value=""placeholder="informe seu nome completo">
@@ -38,31 +40,41 @@
         <label>Sexo: </label>
         <input type="radio" name="sexo" value="M"> Masculino 
         
-         <input type="radio" name="sexo" value="F"> Feminino
- <p></p> 
-         <label>comidas</label>
-         <input type="checkbox" name="comida" value="Lasanha"> Lasanha
-         <input type="checkbox" name="comida" value="Pizza"> Pizza
-         <input type="checkbox" name="comida" value="Arroz"> Arroz
-         <input type="checkbox" name="comida" value="Feijao"> Feijao
-
-<p></p>
-<textarea name="mensagem" id="" cols="100" rows="5" required></textarea>
-
-<br>
-<label>senha: </label>
-<input type="password" name="senha" minlength="8" maxlength="10">
-
+        <input type="radio" name="sexo" value="F"> Feminino
+        <p></p> 
+        <label>comidas</label>
+        <input type="checkbox" name="comida" value="Lasanha"> Lasanha
+        <input type="checkbox" name="comida" value="Pizza"> Pizza
+        <input type="checkbox" name="comida" value="Arroz"> Arroz
+        <input type="checkbox" name="comida" value="Feijao"> Feijao
+        
+        <p></p>
+        <textarea name="mensagem" id="" cols="100" rows="5" required></textarea>
+        
+        <br>
+        <label>senha: </label>
+        <input type="password" name="senha" minlength="8" maxlength="10">
+        
         <label>Foto</label>
         <input type="file" name="Foto" multiple>
-
+        
         
         <input type="hidden" name="codigoibge" value="123421">
-
+        
         <br>
         <button type="submit"> enviar</button>
         <input type="reset" name="limpar" value="limpar">
-
+        
     </form>
+</center>
+</main>
+
+<footer class="rodape">
+    <span class="direitos">2022 &copy; todos os direitos reservados </span>
+    <span class="assinatura">Feito por 
+        <a href='https://Site que nao existe' target="_blank">Gabriel Henrique
+        </span>
+</footer>
 </body>
+
 </html>

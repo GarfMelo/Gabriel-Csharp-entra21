@@ -6,4 +6,4 @@ estudar w3schools.com
 
         https://www.ime.usp.br/~glauber/html/acentos.htm
 
-cmdkey /delete:GenericLegacy:target=git:https://github.com
+        $ cmdkey /delete:LegacyGeneric:target=git:https://github.com
