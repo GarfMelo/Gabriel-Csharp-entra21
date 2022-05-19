@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1280px;
+    display: flex;
+    background: black;
+    min-height: 500px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center ;
+    flex: auto;
+}
+.coluna{
+    width: 33%;
+    height: 150px;
+    text-align: center;
+}
+
+.coluna.orange{
+    background: orange;
+}
+.coluna.blue{
+    background: blue;
+}
+.coluna.red{
+    background: red;
+}
