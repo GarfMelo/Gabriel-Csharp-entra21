@@ -10,3 +10,6 @@ body{
 div.container{
     flex: 1 0 auto;
 }
+.listaPizzas .card-image{
+    height: 100px!important;
+}
